@@ -27,7 +27,7 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Updated team members data with detailed info for Mrs Sinethemba Maphumulo
+  // Updated team members data with detailed info for Mrs Sinethemba Maphumulo and Mrs Lebogang Nzimande
   const teamMembers = [
     { 
       name: "Sinethemba Maphumulo", 
@@ -46,8 +46,10 @@ const About = () => {
     { 
       name: "Lebogang Nzimande", 
       role: "Director - Secretary", 
-      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
-      bio: "Handling administrative duties and maintaining official records." 
+      image: "/lovable-uploads/1c78400f-8c64-4bea-8b10-401518739816.png", 
+      bio: "Diploma in Business Management",
+      details: "12 years in Operations and Project Management. Proven track record of driving company growth and profitability. Skilled in developing and maintaining relationships with key stakeholders for successful project execution. Experienced in establishing company-wide policies and procedures to ensure compliance with regulatory and legal requirements.",
+      quote: "I thrive to be a driving force for our youth and communities"
     },
     { 
       name: "Project Administrator", 
