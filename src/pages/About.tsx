@@ -1,8 +1,18 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 const About = () => {
+  const [selectedMember, setSelectedMember] = useState<number | null>(null);
+  
   // Animation effect for elements
   useEffect(() => {
     const observerOptions = {
@@ -151,31 +161,71 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Our Leadership Team</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="flex flex-col items-center text-center animate-on-scroll">
-                <div className={`w-40 h-40 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-purple' : 'border-yellow-400'}`}>
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-green-600 font-medium mb-2">{member.role}</p>
-                <p className="text-gray-600 text-sm">{member.bio}</p>
-                
-                {member.details && (
-                  <div className="mt-3 text-sm text-gray-700">
-                    <p>{member.details}</p>
-                    {member.quote && (
-                      <p className="mt-3 italic font-medium text-eee-purple">"{member.quote}"</p>
-                    )}
+              <Card key={index} className="flex flex-col items-center text-center animate-on-scroll hover:shadow-lg transition-shadow">
+                <CardContent className="pt-6 px-6 pb-4 flex flex-col items-center">
+                  <div className={`w-32 h-32 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-purple' : 'border-yellow-400'}`}>
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                )}
-              </div>
+                  <h3 className="text-xl font-bold">{member.name}</h3>
+                  <p className="text-green-600 font-medium mb-2">{member.role}</p>
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">{member.bio}</p>
+                  
+                  {member.details && (
+                    <Button 
+                      variant="outline" 
+                      onClick={() => setSelectedMember(index)}
+                      className="mt-auto"
+                    >
+                      Learn More
+                    </Button>
+                  )}
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Member Details Dialog */}
+      <Dialog open={selectedMember !== null} onOpenChange={() => setSelectedMember(null)}>
+        {selectedMember !== null && teamMembers[selectedMember] && (
+          <DialogContent className="max-w-lg">
+            <DialogHeader>
+              <DialogTitle className="text-2xl flex items-center gap-3">
+                <span>{teamMembers[selectedMember].name}</span>
+                <span className="text-green-600 text-lg font-medium">
+                  {teamMembers[selectedMember].role}
+                </span>
+              </DialogTitle>
+            </DialogHeader>
+            
+            <div className="flex flex-col md:flex-row gap-6 items-start mt-4">
+              <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 border-4 border-eee-purple">
+                <img 
+                  src={teamMembers[selectedMember].image} 
+                  alt={teamMembers[selectedMember].name} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              <div className="flex-1">
+                <p className="font-medium text-eee-purple mb-2">{teamMembers[selectedMember].bio}</p>
+                <p className="mb-4">{teamMembers[selectedMember].details}</p>
+                
+                {teamMembers[selectedMember].quote && (
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-eee-purple">
+                    <p className="italic text-gray-700">"{teamMembers[selectedMember].quote}"</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </DialogContent>
+        )}
+      </Dialog>
     </div>
   );
 };
