@@ -27,12 +27,32 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Team members data
+  // Updated team members data based on the provided image
   const teamMembers = [
-    { name: "Jane Smith", role: "Executive Director", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&h=500&fit=crop", bio: "Health policy expert with over 15 years of experience in public health initiatives." },
-    { name: "Michael Johnson", role: "Programs Director", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&h=500&fit=crop", bio: "Former educator passionate about integrating health education into school curricula." },
-    { name: "Sarah Nkosi", role: "Community Outreach", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop", bio: "Dedicated to building strong partnerships between communities and health institutions." },
-    { name: "David Okafor", role: "Finance Director", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=500&fit=crop", bio: "Financial expert committed to ensuring sustainable funding for youth health programs." },
+    { 
+      name: "Sinethemba Maphumulo", 
+      role: "Chairperson", 
+      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      bio: "Leading the vision and strategic direction of the EEE Foundation." 
+    },
+    { 
+      name: "Zanele Qomoyi", 
+      role: "Director - Treasurer", 
+      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      bio: "Managing the foundation's finances and ensuring sustainable funding." 
+    },
+    { 
+      name: "Lebogang Nzimande", 
+      role: "Director - Secretary", 
+      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      bio: "Handling administrative duties and maintaining official records." 
+    },
+    { 
+      name: "Project Administrator", 
+      role: "Project Administrator", 
+      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      bio: "Coordinating the foundation's initiatives and day-to-day operations." 
+    },
   ];
 
   return (
@@ -126,7 +146,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="flex flex-col items-center text-center animate-on-scroll">
-                <div className="w-40 h-40 rounded-full overflow-hidden mb-4">
+                <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-yellow-400">
                   <img 
                     src={member.image} 
                     alt={member.name} 
@@ -134,7 +154,7 @@ const About = () => {
                   />
                 </div>
                 <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-eee-purple mb-2">{member.role}</p>
+                <p className="text-green-600 font-medium mb-2">{member.role}</p>
                 <p className="text-gray-600 text-sm">{member.bio}</p>
               </div>
             ))}
