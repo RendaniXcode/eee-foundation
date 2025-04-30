@@ -27,7 +27,7 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Updated team members data with detailed info for Mrs Sinethemba Maphumulo and Mrs Lebogang Nzimande
+  // Updated team members data with detailed info for all team members
   const teamMembers = [
     { 
       name: "Sinethemba Maphumulo", 
@@ -40,8 +40,10 @@ const About = () => {
     { 
       name: "Zanele Qomoyi", 
       role: "Director - Treasurer", 
-      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
-      bio: "Managing the foundation's finances and ensuring sustainable funding." 
+      image: "/lovable-uploads/5d0899c0-fdc6-4ca6-8485-b4e7a98314ae.png", 
+      bio: "BCom Hons (Business Management), Certificate Fashion Design",
+      details: "Result driven and compassionate leader with experience in banking, administration and stakeholder engagement. Proven performance history of effective team leadership and relationship management. Dedicated to empowering communities with a passion for fashion, women empowering.",
+      quote: "I aim to continue growing and developing as a leader and change-maker."
     },
     { 
       name: "Lebogang Nzimande", 
