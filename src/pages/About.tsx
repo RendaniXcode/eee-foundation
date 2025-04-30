@@ -27,13 +27,15 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Updated team members data based on the provided image
+  // Updated team members data with detailed info for Mrs Sinethemba Maphumulo
   const teamMembers = [
     { 
       name: "Sinethemba Maphumulo", 
       role: "Chairperson", 
-      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
-      bio: "Leading the vision and strategic direction of the EEE Foundation." 
+      image: "/lovable-uploads/bdce63bd-ff4e-4224-a494-25dda56203f6.png", 
+      bio: "BCom (Majors in Managerial Accounting & Finance and Economics)",
+      details: "Social entrepreneur who is passionate about skills development and youth empowerment. Previously worked in different Finance departments. Managing Director of group company focused in manufacturing, export market expansion with special interest in events, tourism and property investment.",
+      quote: "Making an impact in disadvantaged population groups especially the youth is my calling."
     },
     { 
       name: "Zanele Qomoyi", 
@@ -146,7 +148,7 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="flex flex-col items-center text-center animate-on-scroll">
-                <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-yellow-400">
+                <div className={`w-40 h-40 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-purple' : 'border-yellow-400'}`}>
                   <img 
                     src={member.image} 
                     alt={member.name} 
@@ -156,6 +158,15 @@ const About = () => {
                 <h3 className="text-xl font-bold">{member.name}</h3>
                 <p className="text-green-600 font-medium mb-2">{member.role}</p>
                 <p className="text-gray-600 text-sm">{member.bio}</p>
+                
+                {member.details && (
+                  <div className="mt-3 text-sm text-gray-700">
+                    <p>{member.details}</p>
+                    {member.quote && (
+                      <p className="mt-3 italic font-medium text-eee-purple">"{member.quote}"</p>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
