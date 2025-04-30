@@ -39,7 +39,8 @@ const Events = () => {
       location: "Kings Park Stadium, Durban",
       description: "Annual running event promoting mental health awareness and physical wellness.",
       image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-      featured: true
+      featured: true,
+      slug: "mind-over-miles"
     },
     {
       id: 2,
@@ -48,7 +49,8 @@ const Events = () => {
       location: "Johannesburg Conference Centre",
       description: "Bringing together youth leaders to discuss pressing health challenges and solutions.",
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-      featured: false
+      featured: false,
+      slug: "youth-health-summit"
     },
     {
       id: 3,
@@ -57,7 +59,8 @@ const Events = () => {
       location: "Various Schools in Cape Town",
       description: "Interactive health education day with screenings, activities, and resources.",
       image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
-      featured: false
+      featured: false,
+      slug: "school-health-fair"
     }
   ];
 
@@ -69,7 +72,8 @@ const Events = () => {
       date: "16 June 2024",
       location: "Kings Park Stadium, Durban",
       description: "Over 1,200 participants joined our annual run for mental health awareness.",
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23"
+      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+      slug: "mind-over-miles-2024"
     },
     {
       id: 5,
@@ -77,7 +81,8 @@ const Events = () => {
       date: "March-May 2024",
       location: "Multiple Locations",
       description: "Six-week workshop series covering nutrition, physical activity, and mental wellbeing.",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027"
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      slug: "youth-health-workshop-series-2024"
     }
   ];
 
@@ -154,7 +159,7 @@ const Events = () => {
                 </div>
                 
                 <Button className="bg-eee-purple hover:bg-eee-dark-purple" size="lg" asChild>
-                  <Link to="/events/mind-over-miles">Register Now</Link>
+                  <Link to={`/events/${featuredEvent.slug}`}>Register Now</Link>
                 </Button>
               </div>
             </div>
@@ -196,7 +201,7 @@ const Events = () => {
                     </CardContent>
                     <CardFooter>
                       <Button variant="outline" asChild>
-                        <Link to={`/events/${event.id}`}>View Details</Link>
+                        <Link to={`/events/${event.slug}`}>View Details</Link>
                       </Button>
                     </CardFooter>
                   </Card>
@@ -229,7 +234,7 @@ const Events = () => {
                     </CardContent>
                     <CardFooter>
                       <Button variant="outline" asChild>
-                        <Link to={`/events/${event.id}`}>View Highlights</Link>
+                        <Link to={`/events/${event.slug}`}>View Highlights</Link>
                       </Button>
                     </CardFooter>
                   </Card>
