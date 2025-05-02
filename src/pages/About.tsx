@@ -41,73 +41,73 @@ const About = () => {
   // Gallery Images
   const galleryImages: GalleryImage[] = [
     { 
-      src: "/lovable-uploads/277981ef-28cb-47cf-8f01-f5ab3c475325.png", 
+      src: "/images/277981ef-28cb-47cf-8f01-f5ab3c475325.png", 
       alt: "School children with health awareness materials", 
       caption: "Students participating in our anti-smoking campaign",
       category: "Health Education"
     },
     { 
-      src: "/lovable-uploads/088bdabc-99b4-4c8c-b933-aaaf6ef40189.png", 
+      src: "/images/088bdabc-99b4-4c8c-b933-aaaf6ef40189.png", 
       alt: "School children holding no smoking signs", 
       caption: "Youth advocates for tobacco-free schools",
       category: "Youth Advocacy"
     },
     { 
-      src: "/lovable-uploads/7a4c2055-6b34-4c4a-aeb5-e9f445580bf4.png", 
+      src: "/images/7a4c2055-6b34-4c4a-aeb5-e9f445580bf4.png", 
       alt: "Team members with official", 
       caption: "EEE Foundation team members with community leaders",
       category: "Community Partnerships"
     },
     { 
-      src: "/lovable-uploads/c9571d3b-ff5f-4614-a024-011198aead31.png", 
+      src: "/images/c9571d3b-ff5f-4614-a024-011198aead31.png", 
       alt: "Official signing document", 
       caption: "Formalizing partnerships to expand our health programs",
       category: "Program Development"
     },
     { 
-      src: "/lovable-uploads/f1db06ba-5aab-4673-bdaf-44632788058d.png", 
+      src: "/images/f1db06ba-5aab-4673-bdaf-44632788058d.png", 
       alt: "Team members in government office", 
       caption: "Advocacy work at local government offices",
       category: "Policy Advocacy"
     },
     { 
-      src: "/lovable-uploads/a9991e39-ea8a-48c8-888c-3ef421452b14.png", 
+      src: "/images/a9991e39-ea8a-48c8-888c-3ef421452b14.png", 
       alt: "People in waiting area", 
       caption: "Community health services outreach",
       category: "Health Services"
     },
     { 
-      src: "/lovable-uploads/f5983113-8798-4a8f-99a6-00c82e6d97e4.png", 
+      src: "/images/f5983113-8798-4a8f-99a6-00c82e6d97e4.png", 
       alt: "HIV/AIDS awareness materials", 
       caption: "HIV/AIDS awareness campaign materials",
       category: "Health Awareness"
     },
     { 
-      src: "/lovable-uploads/b6df6ae6-7575-458e-8447-129bc170a439.png", 
+      src: "/images/b6df6ae6-7575-458e-8447-129bc170a439.png", 
       alt: "HIV/AIDS awareness ribbon", 
       caption: "Symbolizing our commitment to HIV/AIDS education",
       category: "Health Awareness"
     },
     { 
-      src: "/lovable-uploads/7e409df6-16b1-4677-a4c4-4d3eb64dae31.png", 
+      src: "/images/7e409df6-16b1-4677-a4c4-4d3eb64dae31.png", 
       alt: "Award ceremony", 
       caption: "Recognizing community health champions",
       category: "Community Recognition"
     },
     { 
-      src: "/lovable-uploads/54eaba1c-94ef-48f2-bb2a-633e4e2c5bc9.png", 
+      src: "/images/54eaba1c-94ef-48f2-bb2a-633e4e2c5bc9.png", 
       alt: "Speaker at event", 
       caption: "Health education workshop for community leaders",
       category: "Health Education"
     },
     { 
-      src: "/lovable-uploads/5f873996-56fc-4f7b-92fc-459bce5162e8.png", 
+      src: "/images/5f873996-56fc-4f7b-92fc-459bce5162e8.png", 
       alt: "Community event with red ribbons", 
       caption: "Health awareness event for vulnerable populations",
       category: "Community Outreach"
     },
     { 
-      src: "/lovable-uploads/fc56440f-4a94-47bb-8684-c53881e4973e.png", 
+      src: "/images/fc56440f-4a94-47bb-8684-c53881e4973e.png", 
       alt: "Community workshop participants", 
       caption: "Workshop participants learning about health resources",
       category: "Capacity Building"
@@ -119,7 +119,7 @@ const About = () => {
     { 
       name: "Sinethemba Maphumulo", 
       role: "Chairperson", 
-      image: "/lovable-uploads/bdce63bd-ff4e-4224-a494-25dda56203f6.png", 
+      image: "/images/Sinethemba.jpg", 
       bio: "BCom (Majors in Managerial Accounting & Finance and Economics)",
       details: "Social entrepreneur who is passionate about skills development and youth empowerment. Previously worked in different Finance departments. Managing Director of group company focused in manufacturing, export market expansion with special interest in events, tourism and property investment.",
       quote: "Making an impact in disadvantaged population groups especially the youth is my calling."
@@ -127,7 +127,7 @@ const About = () => {
     { 
       name: "Zanele Qomoyi", 
       role: "Director - Treasurer", 
-      image: "/lovable-uploads/5d0899c0-fdc6-4ca6-8485-b4e7a98314ae.png", 
+      image: "/images/Zanele.jpg", 
       bio: "BCom Hons (Business Management), Certificate Fashion Design",
       details: "Result driven and compassionate leader with experience in banking, administration and stakeholder engagement. Proven performance history of effective team leadership and relationship management. Dedicated to empowering communities with a passion for fashion, women empowering.",
       quote: "I aim to continue growing and developing as a leader and change-maker."
@@ -135,7 +135,7 @@ const About = () => {
     { 
       name: "Lebogang Nzimande", 
       role: "Director - Secretary", 
-      image: "/lovable-uploads/1c78400f-8c64-4bea-8b10-401518739816.png", 
+      image: "/images/Lebogang.jpg", 
       bio: "Diploma in Business Management",
       details: "12 years in Operations and Project Management. Proven track record of driving company growth and profitability. Skilled in developing and maintaining relationships with key stakeholders for successful project execution. Experienced in establishing company-wide policies and procedures to ensure compliance with regulatory and legal requirements.",
       quote: "I thrive to be a driving force for our youth and communities"
@@ -143,7 +143,7 @@ const About = () => {
     { 
       name: "Project Administrator", 
       role: "Project Administrator", 
-      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      image: "/images/Placeholder.jpg", 
       bio: "Coordinating the foundation's initiatives and day-to-day operations." 
     },
   ];
@@ -240,11 +240,12 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <Card key={index} className="flex flex-col items-center text-center animate-on-scroll hover:shadow-lg transition-shadow">
                 <CardContent className="pt-6 px-6 pb-4 flex flex-col items-center">
-                  <div className={`w-32 h-32 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-purple' : 'border-yellow-400'}`}>
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4 relative">
                     <img 
                       src={member.image} 
                       alt={member.name} 
                       className="w-full h-full object-cover"
+                      style={{ objectPosition: 'center 60%' }}
                     />
                   </div>
                   <h3 className="text-xl font-bold">{member.name}</h3>
@@ -295,11 +296,12 @@ const About = () => {
             </DialogHeader>
             
             <div className="flex flex-col md:flex-row gap-6 items-start mt-4">
-              <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 border-4 border-eee-purple">
+              <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 relative">
                 <img 
                   src={teamMembers[selectedMember].image} 
                   alt={teamMembers[selectedMember].name} 
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center 60%' }}
                 />
               </div>
               
