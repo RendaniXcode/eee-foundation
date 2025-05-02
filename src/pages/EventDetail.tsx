@@ -19,7 +19,7 @@ const EventDetail = () => {
       opens: "15 January 2025",
       closes: "7 June 2025"
     },
-    heroImage: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
+    heroImage: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/event-hero-image.jpg",
     details: `
       Mind Over Miles combines a 5K/10K run with mental health awareness activities. 
       The event brings together runners of all experience levels to promote the connection 

@@ -98,7 +98,7 @@ const Home = () => {
               <CardContent>
                 <div className="aspect-video bg-gray-100 mb-4 rounded-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                    src="https://eee-foundation-media.s3.eu-west-1.amazonaws.com/home-banner-image.jpg" 
                     alt="Green mountains landscape"
                     className="w-full h-full object-cover"
                   />

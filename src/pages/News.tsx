@@ -26,21 +26,21 @@ const News = () => {
       title: "EEE Foundation Awarded Community Impact Grant",
       date: "April 15, 2025",
       excerpt: "The EEE Foundation has been awarded a significant grant to expand its Adopt a School program to ten additional schools in KwaZulu-Natal.",
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23"
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/press-release-grant.jpg"
     },
     {
       id: 2,
       title: "Mind Over Miles Event Registration Now Open",
       date: "March 28, 2025",
       excerpt: "Registration for the annual Mind Over Miles event is now open, with early bird discounts available until May 15th.",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b"
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/mind-over-miles-event.jpg"
     },
     {
       id: 3,
       title: "New Partnership with National Health Department",
       date: "February 10, 2025",
       excerpt: "EEE Foundation is proud to announce a new strategic partnership with the National Department of Health to enhance youth health education.",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027"
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/health-department-partnership.jpg"
     }
   ];
 
@@ -51,14 +51,14 @@ const News = () => {
       platform: "Instagram",
       content: "Exciting news! Our Mind Over Miles event last weekend reached over 5,000 participants. Thank you to everyone who joined us in promoting mental health awareness! #MindOverMiles #EEEFoundation",
       date: "March 20, 2025",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b"
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/social-post-event.jpg"
     },
     {
       id: 2,
       platform: "Facebook",
       content: "Today at Northwood High School: Our team conducted interactive health workshops with over 200 students as part of our Adopt a School program. The energy was incredible! #AdoptASchool #YouthHealth",
       date: "April 2, 2025",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/social-post-workshop.jpg"
     }
   ];
 

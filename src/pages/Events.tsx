@@ -38,7 +38,7 @@ const Events = () => {
       date: "14 June 2025",
       location: "Kings Park Stadium, Durban",
       description: "Annual running event promoting mental health awareness and physical wellness.",
-      image: "/images/fc56440f-4a94-47bb-8684-c53881e4973e.png",
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/fc56440f-4a94-47bb-8684-c53881e4973e.png",
       featured: true,
       slug: "mind-over-miles"
     },
