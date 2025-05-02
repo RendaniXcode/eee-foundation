@@ -35,7 +35,7 @@ const Home = () => {
       <section className="relative bg-gradient-to-r from-eee-purple to-eee-dark-purple py-16 md:py-24 lg:py-32 text-white">
         <div className="container flex flex-col items-center text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6">
-            Your Health Is Your Wealth
+            Educate Empower Elevate Foundation
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl">
             Educate. Empower. Elevate. Transforming young lives for a healthier, stronger Africa.
