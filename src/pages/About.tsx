@@ -135,7 +135,7 @@ const About = () => {
     { 
       name: "Lebogang Nzimande", 
       role: "Director - Secretary", 
-      image: "public/images/Lebogang.jpg",
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/Lebogang.jpg",
       bio: "Diploma in Business Management",
       details: "12 years in Operations and Project Management. Proven track record of driving company growth and profitability. Skilled in developing and maintaining relationships with key stakeholders for successful project execution. Experienced in establishing company-wide policies and procedures to ensure compliance with regulatory and legal requirements.",
       quote: "I thrive to be a driving force for our youth and communities"
