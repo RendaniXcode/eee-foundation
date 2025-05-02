@@ -119,7 +119,7 @@ const About = () => {
     { 
       name: "Sinethemba Maphumulo", 
       role: "Chairperson", 
-      image: "/lovable-uploads/bdce63bd-ff4e-4224-a494-25dda56203f6.png", 
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/Sinethemba.jpg",
       bio: "BCom (Majors in Managerial Accounting & Finance and Economics)",
       details: "Social entrepreneur who is passionate about skills development and youth empowerment. Previously worked in different Finance departments. Managing Director of group company focused in manufacturing, export market expansion with special interest in events, tourism and property investment.",
       quote: "Making an impact in disadvantaged population groups especially the youth is my calling."
@@ -127,7 +127,7 @@ const About = () => {
     { 
       name: "Zanele Qomoyi", 
       role: "Director - Treasurer", 
-      image: "/lovable-uploads/5d0899c0-fdc6-4ca6-8485-b4e7a98314ae.png", 
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/Zanele.jpg",
       bio: "BCom Hons (Business Management), Certificate Fashion Design",
       details: "Result driven and compassionate leader with experience in banking, administration and stakeholder engagement. Proven performance history of effective team leadership and relationship management. Dedicated to empowering communities with a passion for fashion, women empowering.",
       quote: "I aim to continue growing and developing as a leader and change-maker."
@@ -135,7 +135,7 @@ const About = () => {
     { 
       name: "Lebogang Nzimande", 
       role: "Director - Secretary", 
-      image: "/lovable-uploads/1c78400f-8c64-4bea-8b10-401518739816.png", 
+      image: "public/images/Lebogang.jpg",
       bio: "Diploma in Business Management",
       details: "12 years in Operations and Project Management. Proven track record of driving company growth and profitability. Skilled in developing and maintaining relationships with key stakeholders for successful project execution. Experienced in establishing company-wide policies and procedures to ensure compliance with regulatory and legal requirements.",
       quote: "I thrive to be a driving force for our youth and communities"
@@ -143,7 +143,7 @@ const About = () => {
     { 
       name: "Project Administrator", 
       role: "Project Administrator", 
-      image: "/lovable-uploads/a1289fd6-3f2f-40c6-93a0-0d1e408f269a.png", 
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/Placeholder.jpg",
       bio: "Coordinating the foundation's initiatives and day-to-day operations." 
     },
   ];
