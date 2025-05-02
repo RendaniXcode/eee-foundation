@@ -65,7 +65,7 @@ const Programs = () => {
             <div className="animate-on-scroll">
               <div className="rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                  src="/images/f5983113-8798-4a8f-99a6-00c82e6d97e4.png"
                   alt="Students in a classroom"
                   className="w-full h-full object-cover"
                 />
@@ -125,7 +125,7 @@ const Programs = () => {
           <div className="order-1 lg:order-2 animate-on-scroll">
             <div className="rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b" 
+                src="/images/f5983113-8798-4a8f-99a6-00c82e6d97e4.png"
                 alt="Green mountains landscape"
                 className="w-full h-full object-cover"
               />

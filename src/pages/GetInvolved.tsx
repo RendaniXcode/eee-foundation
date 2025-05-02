@@ -109,9 +109,9 @@ const GetInvolved = () => {
             </div>
           </div>
           <div>
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden max-w-[65%] mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027" 
+                src="/images/7e409df6-16b1-4677-a4c4-4d3eb64dae31.png"
                 alt="Donation impact"
                 className="w-full h-full object-cover"
               />

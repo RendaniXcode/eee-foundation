@@ -38,7 +38,7 @@ const Events = () => {
       date: "14 June 2025",
       location: "Kings Park Stadium, Durban",
       description: "Annual running event promoting mental health awareness and physical wellness.",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
+      image: "/images/fc56440f-4a94-47bb-8684-c53881e4973e.png",
       featured: true,
       slug: "mind-over-miles"
     },
@@ -48,7 +48,7 @@ const Events = () => {
       date: "23 July 2025",
       location: "Johannesburg Conference Centre",
       description: "Bringing together youth leaders to discuss pressing health challenges and solutions.",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
+      image: "/images/277981ef-28cb-47cf-8f01-f5ab3c475325.png",
       featured: false,
       slug: "youth-health-summit"
     },
@@ -72,7 +72,7 @@ const Events = () => {
       date: "16 June 2024",
       location: "Kings Park Stadium, Durban",
       description: "Over 1,200 participants joined our annual run for mental health awareness.",
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
+      image: "/images/088bdabc-99b4-4c8c-b933-aaaf6ef40189.png",
       slug: "mind-over-miles-2024"
     },
     {

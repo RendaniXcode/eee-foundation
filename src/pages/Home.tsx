@@ -76,7 +76,7 @@ const Home = () => {
               <CardContent>
                 <div className="aspect-video bg-gray-100 mb-4 rounded-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" 
+                    src="/images/277981ef-28cb-47cf-8f01-f5ab3c475325.png"
                     alt="Students in a classroom"
                     className="w-full h-full object-cover"
                   />
