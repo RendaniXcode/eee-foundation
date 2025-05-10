@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -67,7 +66,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col">
       {/* Page Header */}
-      <section className="bg-eee-purple text-white py-16">
+      <section className="bg-eee-dark-brown text-white py-16">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg max-w-3xl">
@@ -138,7 +137,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <Button type="submit" className="bg-eee-purple hover:bg-eee-dark-purple w-full sm:w-auto">
+              <Button type="submit" className="bg-eee-dark-brown hover:bg-eee-light-brown w-full sm:w-auto">
                 Send Message
               </Button>
             </form>
@@ -152,7 +151,7 @@ const Contact = () => {
                   <div className="space-y-3">
                     <p className="flex items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                      <a href="mailto:info@eeefoundation.co.za" className="hover:text-eee-purple">
+                      <a href="mailto:info@eeefoundation.co.za" className="hover:text-eee-green">
                         info@eeefoundation.co.za
                       </a>
                     </p>
@@ -166,10 +165,10 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                   <div className="flex space-x-4">
-                    <a href="https://facebook.com" aria-label="Facebook" className="text-gray-500 hover:text-eee-purple">
+                    <a href="https://facebook.com" aria-label="Facebook" className="text-gray-500 hover:text-eee-green">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                     </a>
-                    <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-eee-purple">
+                    <a href="https://instagram.com" aria-label="Instagram" className="text-gray-500 hover:text-eee-green">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                     </a>
                   </div>

@@ -17,7 +17,7 @@
     --primary: 109 77% 38%; /* Updated to match the green color */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 260 38% 54%;
+    --secondary: 32 100% 50%; /* Updated to match the orange color */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
@@ -75,8 +75,8 @@
   :root {
     --eee-green: 109 77% 38%;
     --eee-orange: 32 100% 50%;
-    --eee-purple-dark: 313 58% 25%;
-    --eee-purple-light: 317 56% 44%;
+    --eee-dark-brown: 313 58% 25%;
+    --eee-light-brown: 317 56% 44%;
   }
 }
 

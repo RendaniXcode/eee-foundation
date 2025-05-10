@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Updated with new color */}
-      <section className="relative bg-gradient-to-r from-eee-green to-eee-purple-dark py-16 md:py-24 lg:py-32 text-white">
+      <section className="relative bg-gradient-to-r from-eee-green to-eee-orange py-16 md:py-24 lg:py-32 text-white">
         <div className="container flex flex-col items-center text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6">
             Educate Empower Elevate Foundation
@@ -41,7 +41,7 @@ const Home = () => {
             Educate. Empower. Elevate. Transforming young lives for a healthier, prosperous Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" variant="default" className="bg-white text-eee-purple-dark hover:bg-gray-100" asChild>
+            <Button size="lg" variant="default" className="bg-white text-eee-dark-brown hover:bg-gray-100" asChild>
               <Link to="/about">Learn More</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>

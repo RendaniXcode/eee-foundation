@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,14 +67,8 @@ export default {
 				eee: {
 					green: '#4cad17', // Main background color
 					orange: '#ff8800', // Secondary accent
-					'purple-dark': '#641b57', // Purple accent
-					'purple-light': '#ae3490', // Lighter purple accent
-					// Keeping previous colors for backward compatibility
-					purple: '#9b87f5',
-					'dark-purple': '#7E69AB',
-					'deeper-purple': '#6E59A5',
-					blue: '#33C3F0',
-					magenta: '#D946EF',
+					'dark-brown': '#641b57', // Replacing purple accent
+					'light-brown': '#ae3490', // Replacing lighter purple accent
 				}
 			},
 			borderRadius: {

@@ -82,11 +82,11 @@ const EventDetail = () => {
           <div className="container text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">{eventData.title}</h1>
             <div className="flex justify-center gap-4 flex-wrap">
-              <span className="bg-eee-purple/80 px-4 py-2 rounded-full text-sm md:text-base flex items-center gap-2">
+              <span className="bg-eee-orange/80 px-4 py-2 rounded-full text-sm md:text-base flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 {eventData.date}
               </span>
-              <span className="bg-eee-purple/80 px-4 py-2 rounded-full text-sm md:text-base flex items-center gap-2">
+              <span className="bg-eee-orange/80 px-4 py-2 rounded-full text-sm md:text-base flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
                 {eventData.location}
               </span>
@@ -105,7 +105,7 @@ const EventDetail = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <Calendar className="text-eee-purple" />
+                  <Calendar className="text-eee-orange" />
                   Event Details
                 </h3>
                 <ul className="space-y-3">
@@ -130,7 +130,7 @@ const EventDetail = () => {
               
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
                 <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                  <Users className="text-eee-purple" />
+                  <Users className="text-eee-orange" />
                   Registration
                 </h3>
                 <ul className="space-y-3">
@@ -144,7 +144,7 @@ const EventDetail = () => {
                   </li>
                 </ul>
                 <div className="mt-6">
-                  <Button className="w-full bg-eee-purple hover:bg-eee-dark-purple" size="lg">
+                  <Button className="w-full bg-eee-orange hover:bg-eee-orange/90" size="lg">
                     Register Now
                   </Button>
                 </div>
@@ -157,7 +157,7 @@ const EventDetail = () => {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {eventData.highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <span className="text-eee-purple font-bold">•</span>
+                    <span className="text-eee-orange font-bold">•</span>
                     <span>{highlight}</span>
                   </li>
                 ))}
@@ -167,15 +167,15 @@ const EventDetail = () => {
           
           {/* Schedule Sidebar */}
           <div className="animate-on-scroll">
-            <div className="bg-eee-purple/10 p-6 rounded-lg sticky top-24">
+            <div className="bg-eee-orange/10 p-6 rounded-lg sticky top-24">
               <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-                <Clock className="text-eee-purple" />
+                <Clock className="text-eee-orange" />
                 Event Schedule
               </h3>
               <ul className="space-y-4">
                 {eventData.schedule.map((item, index) => (
                   <li key={index} className="border-b border-gray-200 pb-3 last:border-0">
-                    <span className="font-semibold text-eee-purple block">{item.time}</span>
+                    <span className="font-semibold text-eee-orange block">{item.time}</span>
                     <span>{item.activity}</span>
                   </li>
                 ))}
@@ -194,7 +194,7 @@ const EventDetail = () => {
             Register today and take the first step towards making a difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-eee-purple hover:bg-eee-dark-purple" size="lg">
+            <Button className="bg-eee-orange hover:bg-eee-orange/90" size="lg">
               Register Now
             </Button>
             <Button variant="outline" size="lg" asChild>
