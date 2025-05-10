@@ -23,7 +23,7 @@ const MainNav = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-eee-purple font-bold text-2xl tracking-tight">EEE Foundation</span>
+            <span className="text-eee-green font-bold text-2xl tracking-tight">EEE Foundation</span>
           </Link>
           
           <nav className="hidden md:flex gap-6">
@@ -32,8 +32,8 @@ const MainNav = () => {
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-eee-purple",
-                  location.pathname === item.path ? "text-eee-purple" : "text-foreground/80"
+                  "text-sm font-medium transition-colors hover:text-eee-green",
+                  location.pathname === item.path ? "text-eee-green" : "text-foreground/80"
                 )}
               >
                 {item.name}
@@ -46,7 +46,7 @@ const MainNav = () => {
           <Button variant="outline" size="sm" asChild>
             <Link to="/get-involved">Volunteer</Link>
           </Button>
-          <Button className="bg-eee-purple hover:bg-eee-dark-purple" size="sm" asChild>
+          <Button className="bg-eee-green hover:bg-eee-green/90" size="sm" asChild>
             <Link to="/get-involved">Donate</Link>
           </Button>
         </div>
@@ -91,8 +91,8 @@ const MainNav = () => {
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  "text-base font-medium transition-colors hover:text-eee-purple",
-                  location.pathname === item.path ? "text-eee-purple" : "text-foreground/80"
+                  "text-base font-medium transition-colors hover:text-eee-green",
+                  location.pathname === item.path ? "text-eee-green" : "text-foreground/80"
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -103,7 +103,7 @@ const MainNav = () => {
               <Button variant="outline" className="w-full" asChild>
                 <Link to="/get-involved" onClick={() => setIsMenuOpen(false)}>Volunteer</Link>
               </Button>
-              <Button className="w-full bg-eee-purple hover:bg-eee-dark-purple" asChild>
+              <Button className="w-full bg-eee-green hover:bg-eee-green/90" asChild>
                 <Link to="/get-involved" onClick={() => setIsMenuOpen(false)}>Donate</Link>
               </Button>
             </div>

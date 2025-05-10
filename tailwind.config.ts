@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for EEE Foundation
+				// Updated EEE Foundation colors based on client feedback
 				eee: {
+					green: '#4cad17', // Main background color
+					orange: '#ff8800', // Secondary accent
+					'purple-dark': '#641b57', // Purple accent
+					'purple-light': '#ae3490', // Lighter purple accent
+					// Keeping previous colors for backward compatibility
 					purple: '#9b87f5',
 					'dark-purple': '#7E69AB',
 					'deeper-purple': '#6E59A5',
-					orange: '#F97316',
 					blue: '#33C3F0',
 					magenta: '#D946EF',
 				}

@@ -30,37 +30,37 @@ const Events = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Sample upcoming events
+  // Updated upcoming events per client feedback
   const upcomingEvents = [
     {
       id: 1,
       title: "Mind Over Miles 2025",
-      date: "14 June 2025",
+      date: "June 2025",
       location: "Kings Park Stadium, Durban",
       description: "Annual running event promoting mental health awareness and physical wellness.",
       image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/fc56440f-4a94-47bb-8684-c53881e4973e.png",
       featured: true,
-      slug: "mind-over-miles"
+      slug: "mind-over-miles-2025"
     },
     {
       id: 2,
-      title: "Youth Health Summit",
-      date: "23 July 2025",
+      title: "Mind Over Miles National Awareness Summit",
+      date: "October 2025",
       location: "Johannesburg Conference Centre",
-      description: "Bringing together youth leaders to discuss pressing health challenges and solutions.",
+      description: "Bringing together youth leaders to discuss mental health challenges and innovative solutions.",
       image: "/images/277981ef-28cb-47cf-8f01-f5ab3c475325.png",
       featured: false,
-      slug: "youth-health-summit"
+      slug: "mind-over-miles-summit-2025"
     },
     {
       id: 3,
-      title: "School Health Fair",
-      date: "5 September 2025",
-      location: "Various Schools in Cape Town",
-      description: "Interactive health education day with screenings, activities, and resources.",
+      title: "World Aids Day Fashion Show Fundraiser",
+      date: "December 2025",
+      location: "Durban International Convention Centre",
+      description: "A charity fashion show bringing awareness to HIV/AIDS and raising funds for community health programs.",
       image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23",
       featured: false,
-      slug: "school-health-fair"
+      slug: "world-aids-day-fashion-show-2025"
     }
   ];
 
@@ -91,8 +91,8 @@ const Events = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Page Header */}
-      <section className="bg-eee-purple text-white py-16">
+      {/* Page Header - Updated with new color */}
+      <section className="bg-eee-green text-white py-16">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Events</h1>
           <p className="text-lg max-w-3xl">
@@ -117,7 +117,7 @@ const Events = () => {
             <div className="animate-on-scroll">
               <h2 className="text-3xl font-bold mb-2">{featuredEvent.title}</h2>
               <div className="flex flex-wrap gap-4 mb-4">
-                <span className="bg-eee-purple/10 text-eee-purple px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-eee-green/10 text-eee-green px-3 py-1 rounded-full text-sm font-medium">
                   {featuredEvent.date}
                 </span>
                 <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -158,7 +158,7 @@ const Events = () => {
                   </p>
                 </div>
                 
-                <Button className="bg-eee-purple hover:bg-eee-dark-purple" size="lg" asChild>
+                <Button className="bg-eee-green hover:bg-eee-green/90" size="lg" asChild>
                   <Link to={`/events/${featuredEvent.slug}`}>Register Now</Link>
                 </Button>
               </div>

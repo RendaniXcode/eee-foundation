@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 260 82% 74%;
+    --primary: 109 77% 38%; /* Updated to match the green color */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 260 38% 54%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 260 82% 74%;
+    --ring: 109 77% 38%; /* Updated to match the green color */
 
     --radius: 0.5rem;
   }
@@ -69,6 +69,14 @@
   
   .section {
     @apply py-12 md:py-16 lg:py-24;
+  }
+
+  /* Add accent colors as custom CSS properties */
+  :root {
+    --eee-green: 109 77% 38%;
+    --eee-orange: 32 100% 50%;
+    --eee-purple-dark: 313 58% 25%;
+    --eee-purple-light: 317 56% 44%;
   }
 }
 

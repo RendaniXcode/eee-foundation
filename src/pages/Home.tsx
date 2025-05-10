@@ -31,17 +31,17 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-eee-purple to-eee-dark-purple py-16 md:py-24 lg:py-32 text-white">
+      {/* Hero Section - Updated with new color */}
+      <section className="relative bg-gradient-to-r from-eee-green to-eee-purple-dark py-16 md:py-24 lg:py-32 text-white">
         <div className="container flex flex-col items-center text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight mb-6">
             Educate Empower Elevate Foundation
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl">
-            Educate. Empower. Elevate. Transforming young lives for a healthier, stronger Africa.
+            Educate. Empower. Elevate. Transforming young lives for a healthier, prosperous Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" variant="default" className="bg-white text-eee-purple hover:bg-gray-100" asChild>
+            <Button size="lg" variant="default" className="bg-white text-eee-purple-dark hover:bg-gray-100" asChild>
               <Link to="/about">Learn More</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
@@ -115,27 +115,27 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Impact Stats */}
+      {/* Impact Stats - Updated with new color */}
       <section className="section container">
         <h2 className="text-3xl font-bold mb-8 text-center">Our Impact</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center animate-on-scroll">
-            <div className="text-4xl font-bold text-eee-purple mb-2">10,000+</div>
+            <div className="text-4xl font-bold text-eee-green mb-2">10,000+</div>
             <p className="text-gray-600">Youth reached since 2015</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center animate-on-scroll">
-            <div className="text-4xl font-bold text-eee-purple mb-2">24</div>
+            <div className="text-4xl font-bold text-eee-green mb-2">24</div>
             <p className="text-gray-600">Hospitals networked</p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-sm border text-center animate-on-scroll">
-            <div className="text-4xl font-bold text-eee-purple mb-2">1,500+</div>
+            <div className="text-4xl font-bold text-eee-green mb-2">1,500+</div>
             <p className="text-gray-600">Event attendees</p>
           </div>
         </div>
       </section>
 
-      {/* Get Involved */}
-      <section className="section bg-eee-purple text-white">
+      {/* Get Involved - Updated with new color */}
+      <section className="section bg-eee-green text-white">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Get Involved</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
@@ -143,7 +143,7 @@ const Home = () => {
             your support makes a significant impact.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="bg-white text-eee-purple hover:bg-gray-100" asChild>
+            <Button size="lg" className="bg-white text-eee-green hover:bg-gray-100" asChild>
               <Link to="/get-involved">Volunteer</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white hover:bg-white/10" asChild>

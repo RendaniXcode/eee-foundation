@@ -19,7 +19,7 @@ const News = () => {
     setEmail("");
   };
 
-  // Sample press releases
+  // Updated press releases
   const pressReleases = [
     {
       id: 1,
@@ -44,50 +44,64 @@ const News = () => {
     }
   ];
 
-  // Sample social media posts
+  // Updated social media posts with news articles
   const socialPosts = [
     {
       id: 1,
-      platform: "Instagram",
-      content: "Exciting news! Our Mind Over Miles event last weekend reached over 5,000 participants. Thank you to everyone who joined us in promoting mental health awareness! #MindOverMiles #EEEFoundation",
-      date: "March 20, 2025",
-      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/social-post-event.jpg"
+      platform: "News Article",
+      content: "Equal rights for healthcare highlighted on World Aids Day - Daily News coverage of our recent World AIDS Day event highlighting equal access to healthcare.",
+      date: "December 2, 2024",
+      image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/social-post-event.jpg",
+      link: "https://dailynews.co.za/news/2024-12-02-equal-rights-for-healthcare-highlighted-on-world-aids-day/"
     },
     {
       id: 2,
-      platform: "Facebook",
-      content: "Today at Northwood High School: Our team conducted interactive health workshops with over 200 students as part of our Adopt a School program. The energy was incredible! #AdoptASchool #YouthHealth",
-      date: "April 2, 2025",
+      platform: "News Coverage",
+      content: "Our team conducted interactive health workshops with over 200 students as part of our Adopt a School program. The energy was incredible!",
+      date: "April 2, 2024",
       image: "https://eee-foundation-media.s3.eu-west-1.amazonaws.com/social-post-workshop.jpg"
+    },
+    {
+      id: 3,
+      platform: "Past Article",
+      content: "Article from last year covering our foundation's initiatives and impact in local communities.",
+      date: "October 15, 2023",
+      image: "/images/7a4c2055-6b34-4c4a-aeb5-e9f445580bf4.png"
     }
   ];
 
-  // Sample newsletters
+  // Updated newsletters schedule
   const newsletters = [
     {
       id: 1,
-      title: "Spring Newsletter 2025",
+      title: "Autumn Newsletter",
       date: "April 2025",
       summary: "Updates on our school programs, upcoming Mind Over Miles event, and volunteer spotlight."
     },
     {
       id: 2,
-      title: "Winter Newsletter 2025",
-      date: "January 2025",
-      summary: "Year in review, new strategic partnerships, and upcoming initiatives for 2025."
+      title: "Winter Newsletter",
+      date: "June 2025",
+      summary: "Summer program highlights, health education initiatives, and community partner features."
     },
     {
       id: 3,
-      title: "Autumn Newsletter 2024",
-      date: "October 2024",
-      summary: "Tobacco Control Workshop results, new team members, and annual fundraising update."
+      title: "Spring Newsletter",
+      date: "September 2025",
+      summary: "Mind Over Miles National Awareness Summit preview and youth health initiatives."
+    },
+    {
+      id: 4,
+      title: "Summer Newsletter",
+      date: "December 2025",
+      summary: "World AIDS Day Fashion Show highlights, annual achievements, and plans for 2026."
     }
   ];
 
   return (
     <div className="flex flex-col">
-      {/* Page Header */}
-      <section className="bg-eee-purple text-white py-16">
+      {/* Page Header - Updated with new color */}
+      <section className="bg-eee-green text-white py-16">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">News & Media</h1>
           <p className="text-lg max-w-3xl">
@@ -107,6 +121,9 @@ const News = () => {
           
           {/* Press Releases Tab */}
           <TabsContent value="press">
+            <div className="text-center mb-8">
+              <p className="text-gray-700 italic">Past media releases are shown below. New releases will be added soon.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {pressReleases.map((item) => (
                 <Card key={item.id} className="flex flex-col">
@@ -132,7 +149,7 @@ const News = () => {
             </div>
           </TabsContent>
           
-          {/* Social Media Tab */}
+          {/* In the News Tab */}
           <TabsContent value="social">
             <div className="space-y-8">
               {socialPosts.map((post) => (
@@ -142,28 +159,33 @@ const News = () => {
                       <div className="h-full">
                         <img 
                           src={post.image} 
-                          alt="Social media post"
+                          alt="News media coverage"
                           className="w-full h-full object-cover"
                         />
                       </div>
                     </div>
                     <div className="md:w-2/3 p-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <div className="bg-eee-purple text-white px-3 py-1 rounded-full text-sm font-medium">
+                        <div className="bg-eee-orange text-white px-3 py-1 rounded-full text-sm font-medium">
                           {post.platform}
                         </div>
                         <span className="text-gray-500 text-sm">{post.date}</span>
                       </div>
                       <p className="text-lg mb-4">{post.content}</p>
                       <div className="flex gap-4">
-                        <Button variant="outline" size="sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart mr-2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                          Like
-                        </Button>
-                        <Button variant="outline" size="sm">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-share mr-2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
-                          Share
-                        </Button>
+                        {post.link ? (
+                          <Button variant="outline" size="sm" asChild>
+                            <a href={post.link} target="_blank" rel="noopener noreferrer">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link mr-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                              Read Article
+                            </a>
+                          </Button>
+                        ) : (
+                          <Button variant="outline" size="sm" disabled>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text mr-2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                            Article Archive
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -172,7 +194,7 @@ const News = () => {
             </div>
           </TabsContent>
           
-          {/* Newsletters Tab */}
+          {/* Newsletters Tab - Updated schedule */}
           <TabsContent value="newsletters">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="md:col-span-2">
@@ -215,7 +237,7 @@ const News = () => {
                           required
                         />
                       </div>
-                      <Button type="submit" className="w-full bg-eee-purple hover:bg-eee-dark-purple">
+                      <Button type="submit" className="w-full bg-eee-green hover:bg-eee-green/90">
                         Subscribe
                       </Button>
                     </form>

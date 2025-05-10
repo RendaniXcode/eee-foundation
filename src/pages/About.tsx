@@ -150,8 +150,8 @@ const About = () => {
 
   return (
     <div className="flex flex-col">
-      {/* Page Header */}
-      <section className="bg-eee-purple text-white py-16">
+      {/* Page Header - Updated with new color */}
+      <section className="bg-eee-green text-white py-16">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-lg max-w-3xl">
@@ -160,7 +160,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Our Story - Updated timeline */}
       <section className="section container">
         <div className="max-w-3xl animate-on-scroll">
           <h2 className="text-3xl font-bold mb-6">Our Story</h2>
@@ -170,10 +170,10 @@ const About = () => {
               empowered youth with the knowledge and tools to lead healthier lives.
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>2015: Founded with a focus on health education programs in local communities</li>
-              <li>2018: Launched the "Adopt a School" program, expanding our reach to educational institutions</li>
-              <li>2022: Introduced "Mind Over Miles" to address the connection between mental and physical health</li>
+              <li>2015: Founded with a focus on education programs in local communities</li>
+              <li>2017: Launched the "Adopt a School" program, expanding our reach to educational institutions</li>
               <li>2024: Re-registered with expanded mission to encompass sustainable health solutions</li>
+              <li>2025: Introduced "Mind Over Miles" to highlight the connection between mental and physical health</li>
             </ul>
           </div>
         </div>
@@ -201,38 +201,38 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* Our Values - Updated color scheme */}
       <section className="section container">
         <h2 className="text-3xl font-bold mb-8 text-center">Our Values</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           <Card className="animate-on-scroll">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-eee-purple">Integrity</h3>
+              <h3 className="text-xl font-bold mb-2 text-eee-green">Integrity</h3>
               <p>We conduct our work with honesty, transparency, and ethical standards in all our interactions.</p>
             </CardContent>
           </Card>
           <Card className="animate-on-scroll">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-eee-purple">Sustainability</h3>
+              <h3 className="text-xl font-bold mb-2 text-eee-green">Sustainability</h3>
               <p>We develop programs and solutions that create lasting impact and can be maintained by local communities.</p>
             </CardContent>
           </Card>
           <Card className="animate-on-scroll">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-eee-purple">Innovation</h3>
+              <h3 className="text-xl font-bold mb-2 text-eee-green">Innovation</h3>
               <p>We embrace creative approaches to address health challenges facing African youth.</p>
             </CardContent>
           </Card>
           <Card className="animate-on-scroll">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-2 text-eee-purple">Community</h3>
+              <h3 className="text-xl font-bold mb-2 text-eee-green">Community</h3>
               <p>We believe in the power of collective action and fostering a sense of belonging and mutual support.</p>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* Leadership Team - Updated color scheme */}
       <section className="section bg-gray-50">
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Leadership Team</h2>
@@ -240,15 +240,16 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <Card key={index} className="flex flex-col items-center text-center animate-on-scroll hover:shadow-lg transition-shadow">
                 <CardContent className="pt-6 px-6 pb-4 flex flex-col items-center">
-                  <div className={`w-32 h-32 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-purple' : 'border-yellow-400'}`}>
+                  <div className={`w-32 h-32 rounded-full overflow-hidden mb-4 border-4 ${index === 0 ? 'border-eee-green' : 'border-eee-orange'}`}>
                     <img 
                       src={member.image} 
                       alt={member.name} 
                       className="w-full h-full object-cover"
+                      style={{ objectPosition: 'center 60%' }}
                     />
                   </div>
                   <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-green-600 font-medium mb-2">{member.role}</p>
+                  <p className="text-eee-green font-medium mb-2">{member.role}</p>
                   <p className="text-gray-600 text-sm mb-4 line-clamp-2">{member.bio}</p>
                   
                   {member.details && (
@@ -288,27 +289,28 @@ const About = () => {
             <DialogHeader>
               <DialogTitle className="text-2xl flex items-center gap-3">
                 <span>{teamMembers[selectedMember].name}</span>
-                <span className="text-green-600 text-lg font-medium">
+                <span className="text-eee-green text-lg font-medium">
                   {teamMembers[selectedMember].role}
                 </span>
               </DialogTitle>
             </DialogHeader>
             
             <div className="flex flex-col md:flex-row gap-6 items-start mt-4">
-              <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 border-4 border-eee-purple">
+              <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0 border-4 border-eee-green">
                 <img 
                   src={teamMembers[selectedMember].image} 
                   alt={teamMembers[selectedMember].name} 
                   className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center 60%' }}
                 />
               </div>
               
               <div className="flex-1">
-                <p className="font-medium text-eee-purple mb-2">{teamMembers[selectedMember].bio}</p>
+                <p className="font-medium text-eee-green mb-2">{teamMembers[selectedMember].bio}</p>
                 <p className="mb-4">{teamMembers[selectedMember].details}</p>
                 
                 {teamMembers[selectedMember].quote && (
-                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-eee-purple">
+                  <div className="bg-gray-50 p-4 rounded-lg border-l-4 border-eee-green">
                     <p className="italic text-gray-700">"{teamMembers[selectedMember].quote}"</p>
                   </div>
                 )}
